@@ -27,7 +27,7 @@ void Motors::stepBack() {
 void Motors::randomTurn(int turnDirection) {
   motorRight(turnDirection * -30);
   motorLeft(turnDirection * 30);
-  delay(random(200, 1000));
+  delay(random(500, 1000));
 }
 
 void Motors::rotateLeft(int speed) {
@@ -41,7 +41,7 @@ void Motors::rotateRight(int speed) {
 }
 
 void Motors::motorRight(int speed) {
-  motorMove(this->rightDirection, this->rightPwm, speed);
+  motorMove(this->rightDirection, this->rightPwm, 0.99 * speed);
 }
 
 void Motors::motorLeft(int speed) {

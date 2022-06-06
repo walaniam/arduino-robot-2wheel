@@ -4,12 +4,8 @@
 #include <Arduino.h>
 
 // motor max voltage
-// 6 batteries
 // const int PWM_MAX = 165 // Max voltage for motor on 1,5V
-//const int PWM_MAX = 172; // Max voltage for motor on chargeable 1,2V
-
-// 5 batteries
-const int PWM_MAX = 145;
+const int PWM_MAX = 172; // Max voltage for motor on chargeable 1,2V
 
 const int L_PWM = 5;
 const int L_DIR = 4;
