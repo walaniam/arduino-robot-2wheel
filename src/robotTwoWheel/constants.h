@@ -1,0 +1,5 @@
+#define DS_TRIGGER_PIN 7
+#define DS_ECHO_PIN 8
+#define SERIAL_SPEED 115200
+
+#define INTERVAL 100
